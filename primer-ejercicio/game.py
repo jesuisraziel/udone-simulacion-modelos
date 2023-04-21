@@ -31,10 +31,8 @@ def play_betting_bame(initial_cash, attempt_cost):
             cash_increase = bet(attempt_cost)
 
             if cash_increase > 0:
-                print(f"Attempt {attempts}: Success.")
                 successful_attempts = successful_attempts + 1
             else:
-                print(f"Attempt {attempts}: Loss.")
                 unsuccessful_attempts = unsuccessful_attempts + 1
 
             cash = cash + cash_increase
